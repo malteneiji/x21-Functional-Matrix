@@ -53,6 +53,19 @@ int main()
 **/
 vector <vector <char> > initializeMatrix(int rows, int columns, char value)
 {
+ vector <vector <char> > matrix(rows);
+
+for (int i = 0;i<rows ; i++ )
+{
+	for (int j = 0;j<columns ; j++)
+	{
+	matrix[i].push_back(value);
+		
+	}
+
+}
+return matrix;
+
 }
 
 /**
@@ -64,4 +77,16 @@ vector <vector <char> > initializeMatrix(int rows, int columns, char value)
 **/
 void printMatrix(vector <vector <char> > matrix)
 {
+for(int i = 0;i<matrix.size();i++)
+{
+for(int j = 0;j<matrix[i].size();j++)
+{
+cout << matrix[i][j] << " ";
+
+}
+
+cout << endl;
+}
+
+
 }
